@@ -36,11 +36,6 @@ python -m http.server 8080
 - **Add a writing:** add an HTML file under `writings/` and a row in `writings/index.html`.
 - **Theme/colors:** edit the CSS variables at the top of `css/styles.css`.
 
-## Before going live — TODO
-Search-and-replace these placeholders:
-- `REPLACE_ME@example.com` → your public email
-- `https://www.linkedin.com/in/REPLACE_ME` → your LinkedIn URL
-
 ## Publishing (GitHub Pages user site)
 1. Create a **personal** GitHub repo named exactly `kumarM6.github.io`.
 2. Push this folder to the `main` branch.

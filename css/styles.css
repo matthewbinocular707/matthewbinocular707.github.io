@@ -203,35 +203,37 @@ ul.pointers li strong { color: var(--fg); font-weight: 600; }
 .frame h2 { margin-top: 0; }
 .frame h2 .dot { color: var(--accent-c); }
 
-/* accent-tinted headings + tags on detail pages */
+/* accent-tinted headings + tags on detail pages (headings stay clean, no bullet) */
 .accent-scope .prose h2 { color: var(--fg); }
-.accent-scope .prose h2::before {
-  content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent-c); margin-right: 10px; vertical-align: middle;
-}
-.accent-scope .page-head h1 { }
 .accent-scope .tags li { color: var(--accent-c); background: var(--accent-tint); border: 1px solid var(--accent-soft); }
 .accent-scope .stats .n { color: var(--accent-c); }
 .accent-scope .back:hover { color: var(--accent-c); }
 .accent-scope .page-head .proj-meta { color: var(--accent-c); }
 
-/* ---- SVG diagram frame (Problem -> Approach -> Impact) ---- */
-.diagram {
+/* ---- Problem -> Approach -> Impact flow (readable, framed) ---- */
+.flow { display: flex; align-items: stretch; gap: 0; margin: 26px 0 10px; }
+.flow-step {
+  flex: 1 1 0;
   border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--card);
-  padding: 18px;
-  margin: 20px 0 8px;
-  overflow: hidden;
+  border-top: 3px solid var(--accent-c, var(--line));
+  border-radius: 14px;
+  background: var(--accent-tint, var(--card));
+  padding: 18px 20px;
+  display: flex; flex-direction: column;
 }
-.diagram svg { width: 100%; height: auto; display: block; }
-.diagram figcaption { font-size: 13px; color: var(--faint); text-align: center; margin-top: 10px; letter-spacing: .02em; }
-/* theme-aware SVG text/fills via currentColor + classes */
-.diagram .d-node { fill: var(--accent-tint); stroke: var(--accent-c); }
-.diagram .d-arrow { stroke: var(--accent-c); fill: var(--accent-c); }
-.diagram .d-label { fill: var(--accent-c); font: 600 13px var(--sans); letter-spacing: .06em; text-transform: uppercase; }
-.diagram .d-text { fill: var(--fg); font: 400 12.5px var(--sans); }
-.diagram .d-muted { fill: var(--muted); font: 400 12px var(--sans); }
+.flow-step .flow-label {
+  font: 600 12px var(--sans); letter-spacing: .10em; text-transform: uppercase;
+  color: var(--accent-c); margin-bottom: 8px;
+}
+.flow-step p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--fg); }
+.flow-arrow {
+  display: flex; align-items: center; justify-content: center;
+  flex: 0 0 34px; color: var(--accent-c); font-size: 22px; line-height: 1;
+}
+@media (max-width: 640px) {
+  .flow { flex-direction: column; }
+  .flow-arrow { flex-basis: auto; transform: rotate(90deg); padding: 6px 0; }
+}
 
 /* ---- rainbow chips (about focus areas) ---- */
 .chips-rainbow li { background: transparent; border: 1px solid; }

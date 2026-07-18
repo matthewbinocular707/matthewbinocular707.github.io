@@ -35,32 +35,25 @@
     </header>
 
     <section class="prose">
-      <figure class="diagram" aria-label="Problem, approach and impact">
-        <svg viewBox="0 0 720 200" role="img">
-          <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth"><path class="d-arrow" d="M0,0 L6,3 L0,6 Z"/></marker></defs>
-          <rect class="d-node" x="6" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
-          <rect class="d-node" x="253" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
-          <rect class="d-node" x="500" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
-          <line class="d-arrow" x1="224" y1="100" x2="249" y2="100" stroke-width="2" marker-end="url(#ah)"/>
-          <line class="d-arrow" x1="471" y1="100" x2="496" y2="100" stroke-width="2" marker-end="url(#ah)"/>
-          <text class="d-label" x="24" y="48">Problem</text>
-          <text class="d-text" x="24" y="82">Partner feedback was</text>
-          <text class="d-text" x="24" y="106">anecdotal, easy to lose</text>
-          <text class="d-text" x="24" y="130">No repeatable signal</text>
-          <text class="d-label" x="271" y="48">Approach</text>
-          <text class="d-text" x="271" y="82">Founded a v-team</text>
-          <text class="d-text" x="271" y="106">Hypothesis-driven method</text>
-          <text class="d-text" x="271" y="130">Ran a 5-week pilot</text>
-          <text class="d-label" x="518" y="48">Impact</text>
-          <text class="d-text" x="518" y="82">Repeatable eng signal</text>
-          <text class="d-text" x="518" y="106">Presented to ~40 PMs</text>
-          <text class="d-text" x="518" y="130">Process that compounds</text>
-        </svg>
-        <figcaption>Problem &rarr; Approach &rarr; Impact</figcaption>
-      </figure>
+      <div class="flow">
+        <div class="flow-step">
+          <span class="flow-label">Problem</span>
+          <p>Partner feedback about how security products were really deployed was anecdotal and easy to lose. There was no repeatable, disciplined way to observe operations, find root-cause friction, and turn it into engineering signal.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+        <div class="flow-step">
+          <span class="flow-label">Approach</span>
+          <p>I founded and led a cross-functional v-team to design a hypothesis-driven "Gemba Walk" methodology — authoring the requirements, building the playbook and toolkit, and running a 5-week pilot.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+        <div class="flow-step">
+          <span class="flow-label">Impact</span>
+          <p>Replaced ad-hoc feedback with a repeatable, prioritizable signal — presented to a ~40-person PM org that shapes a large, multi-product security portfolio.</p>
+        </div>
+      </div>
 
       <ul class="stats">
-        <li><span class="n">5-week</span><span class="l">Pilot iteration</span></li>
+        <li><span class="n">5-week</span><span class="l">Pilot iteration (Wave 1)</span></li>
         <li><span class="n">~40</span><span class="l">PM org presented to</span></li>
         <li><span class="n">v-team</span><span class="l">Founded &amp; led</span></li>
       </ul>
@@ -79,9 +72,9 @@
       <div class="frame">
       <h2>The impact</h2>
       <ul class="pointers">
-        <li>Replaced ad-hoc feedback with a <strong>hypothesis-driven, repeatable method</strong> that produces structured, prioritizable engineering signals.</li>
-        <li>Presented the practice to a <strong>~40-person partner-PM organization</strong> for scaled adoption.</li>
-        <li>Created reusable assets that let others run the method without starting from scratch.</li>
+        <li>Replaced ad-hoc feedback with a <strong>hypothesis-driven, repeatable method</strong> that produces structured, prioritizable engineering signal.</li>
+        <li>Presented the practice to a <strong>~40-person partner-PM organization</strong> — influencing how a large, multi-product security portfolio learns from partners.</li>
+        <li>Created reusable assets that let others run the method without starting from scratch — a process built to <strong>compound</strong>.</li>
       </ul>
       </div>
 

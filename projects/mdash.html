@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap accent-scope p-green">
     <nav class="site-nav">
       <a href="../index.html" class="brand">Mohit Kumar</a>
       <div class="nav-links">
@@ -32,6 +32,30 @@
     </header>
 
     <section class="prose">
+      <figure class="diagram" aria-label="Problem, approach and impact">
+        <svg viewBox="0 0 720 200" role="img">
+          <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth"><path class="d-arrow" d="M0,0 L6,3 L0,6 Z"/></marker></defs>
+          <rect class="d-node" x="6" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="253" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="500" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <line class="d-arrow" x1="224" y1="100" x2="249" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <line class="d-arrow" x1="471" y1="100" x2="496" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <text class="d-label" x="24" y="48">Problem</text>
+          <text class="d-text" x="24" y="82">Single-model scanning</text>
+          <text class="d-text" x="24" y="106">misses complex vulns</text>
+          <text class="d-text" x="24" y="130">Too many false positives</text>
+          <text class="d-label" x="271" y="48">Approach</text>
+          <text class="d-text" x="271" y="82">100+ agent orchestration</text>
+          <text class="d-text" x="271" y="106">Private-preview incubation</text>
+          <text class="d-text" x="271" y="130">Built the field motion</text>
+          <text class="d-label" x="518" y="48">Impact</text>
+          <text class="d-text" x="518" y="82">Vulns found &amp; validated</text>
+          <text class="d-text" x="518" y="106">Fewer false positives</text>
+          <text class="d-text" x="518" y="130">Repeatable onboarding</text>
+        </svg>
+        <figcaption>Problem &rarr; Approach &rarr; Impact</figcaption>
+      </figure>
+
       <ul class="stats">
         <li><span class="n">100+</span><span class="l">Specialized AI agents orchestrated</span></li>
         <li><span class="n">Multi-model</span><span class="l">Verification architecture</span></li>
@@ -42,17 +66,19 @@
       <p>Organizations increasingly struggle to find complex vulnerabilities in large codebases using traditional, single-model scanning. The opportunity: a next-generation, AI-powered system that uses a <strong>multi-model architecture</strong> instead of a single model — orchestrating 100+ specialized agents to find, validate, debate, and prove vulnerabilities end to end, discovering previously unknown issues while reducing false positives through cross-model verification.</p>
 
       <h2>What I drove</h2>
-      <ul>
+      <ul class="pointers">
         <li>Owned <strong>private-preview incubation and design-partner execution</strong> — onboarding, office hours, standups, and deployment motions.</li>
         <li>Built the <strong>field motion</strong>: preview-customer qualification, tenant onboarding and provisioning, readiness, and progression from interest to active use.</li>
         <li>Ran <strong>structured feedback collection</strong> back to engineering, and helped account teams navigate preview readiness and onboarding requirements.</li>
       </ul>
 
+      <div class="frame">
       <h2>The impact</h2>
-      <ul>
+      <ul class="pointers">
         <li>Helped operationalize <strong>how an early-stage AI security capability reached customers and partners</strong> — the connective tissue between a research breakthrough and real-world adoption.</li>
         <li>Established repeatable onboarding and feedback loops that let engineering learn quickly from preview design partners.</li>
       </ul>
+      </div>
 
       <h2>What it showed</h2>
       <p>Comfort operating at the earliest, most ambiguous stage of a product — where the job is to build the go-to-customer motion from scratch and create the feedback loops that make an emerging AI capability adoptable.</p>

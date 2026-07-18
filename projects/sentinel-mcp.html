@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap accent-scope p-amber">
     <nav class="site-nav">
       <a href="../index.html" class="brand">Mohit Kumar</a>
       <div class="nav-links">
@@ -32,23 +32,49 @@
     </header>
 
     <section class="prose">
+      <figure class="diagram" aria-label="Problem, approach and impact">
+        <svg viewBox="0 0 720 200" role="img">
+          <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth"><path class="d-arrow" d="M0,0 L6,3 L0,6 Z"/></marker></defs>
+          <rect class="d-node" x="6" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="253" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="500" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <line class="d-arrow" x1="224" y1="100" x2="249" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <line class="d-arrow" x1="471" y1="100" x2="496" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <text class="d-label" x="24" y="48">Problem</text>
+          <text class="d-text" x="24" y="82">Every AI tool needs a</text>
+          <text class="d-text" x="24" y="106">custom SIEM integration</text>
+          <text class="d-text" x="24" y="130">Fragile, slow to scale</text>
+          <text class="d-label" x="271" y="48">Approach</text>
+          <text class="d-text" x="271" y="82">Product story for MCP</text>
+          <text class="d-text" x="271" y="106">One open interface</text>
+          <text class="d-text" x="271" y="130">Preview enablement</text>
+          <text class="d-label" x="518" y="48">Impact</text>
+          <text class="d-text" x="518" y="82">SIEM becomes AI-native</text>
+          <text class="d-text" x="518" y="106">Agents &amp; copilots plug in</text>
+          <text class="d-text" x="518" y="130">One standard, not many</text>
+        </svg>
+        <figcaption>Problem &rarr; Approach &rarr; Impact</figcaption>
+      </figure>
+
       <h2>The problem</h2>
       <p>Before standardized protocols, every AI system needed a custom integration to every security tool and data source. Those integrations were fragmented, fragile, inconsistent, and slow to scale — security teams had to build and maintain separate connections for each platform. The result: AI-assisted security work was hard to operationalize.</p>
 
       <h2>What I drove</h2>
-      <ul>
+      <ul class="pointers">
         <li>Created the <strong>product narrative and positioning</strong> for a SIEM's Model Context Protocol (MCP) capability — framing it as a way to make the platform consumable by any compatible AI client (copilots, coding assistants, and agents).</li>
         <li>Authored the flagship positioning and preview decks and <strong>announcement/enablement content</strong> demonstrating agent-driven investigations against the SIEM.</li>
         <li>Ran <strong>partner preview engagement and feedback loops</strong>, and led adoption conversations with customers and managed-security providers.</li>
         <li>Evangelized MCP and agentic security workflows across engineering, customer-experience, and partner teams.</li>
       </ul>
 
+      <div class="frame">
       <h2>The impact</h2>
-      <ul>
+      <ul class="pointers">
         <li>Helped translate a low-level protocol into a <strong>practical security-operations capability</strong> — one standard instead of many brittle integrations.</li>
         <li>Produced some of the earliest enablement content connecting the SIEM to third-party AI clients, seeding partner and customer interest during preview.</li>
         <li>Positioned the platform as <strong>AI-native</strong> at a moment when agentic tooling was becoming central to security operations.</li>
       </ul>
+      </div>
 
       <h2>What it showed</h2>
       <p>Product sense at the frontier: spotting where an emerging open standard changes what's possible, then doing the storytelling and enablement to make it real for customers and partners.</p>

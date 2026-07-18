@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap accent-scope p-rose">
     <nav class="site-nav">
       <a href="../index.html" class="brand">Mohit Kumar</a>
       <div class="nav-links">
@@ -32,6 +32,30 @@
     </header>
 
     <section class="prose">
+      <figure class="diagram" aria-label="Problem, approach and impact">
+        <svg viewBox="0 0 720 200" role="img">
+          <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto" markerUnits="strokeWidth"><path class="d-arrow" d="M0,0 L6,3 L0,6 Z"/></marker></defs>
+          <rect class="d-node" x="6" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="253" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <rect class="d-node" x="500" y="18" width="214" height="164" rx="12" stroke-width="1.5"/>
+          <line class="d-arrow" x1="224" y1="100" x2="249" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <line class="d-arrow" x1="471" y1="100" x2="496" y2="100" stroke-width="2" marker-end="url(#ah)"/>
+          <text class="d-label" x="24" y="48">Problem</text>
+          <text class="d-text" x="24" y="82">Partner feedback was</text>
+          <text class="d-text" x="24" y="106">anecdotal, easy to lose</text>
+          <text class="d-text" x="24" y="130">No repeatable signal</text>
+          <text class="d-label" x="271" y="48">Approach</text>
+          <text class="d-text" x="271" y="82">Founded a v-team</text>
+          <text class="d-text" x="271" y="106">Hypothesis-driven method</text>
+          <text class="d-text" x="271" y="130">Ran a 5-week pilot</text>
+          <text class="d-label" x="518" y="48">Impact</text>
+          <text class="d-text" x="518" y="82">Repeatable eng signal</text>
+          <text class="d-text" x="518" y="106">Presented to ~40 PMs</text>
+          <text class="d-text" x="518" y="130">Process that compounds</text>
+        </svg>
+        <figcaption>Problem &rarr; Approach &rarr; Impact</figcaption>
+      </figure>
+
       <ul class="stats">
         <li><span class="n">5-week</span><span class="l">Pilot iteration</span></li>
         <li><span class="n">~40</span><span class="l">PM org presented to</span></li>
@@ -42,19 +66,21 @@
       <p>Partner feedback about how security products were actually deployed and operated was mostly anecdotal — hard to act on, and easy to lose. There was no repeatable, disciplined way to observe real-world partner operations, uncover the <em>root causes</em> of friction, and convert those observations into signals engineering could prioritize.</p>
 
       <h2>What I led</h2>
-      <ul>
+      <ul class="pointers">
         <li><strong>Founded and led the v-team</strong> of partner-focused PMs as the project lead / global champion.</li>
         <li>Authored the <strong>business requirements</strong> and designed the methodology — borrowing the &ldquo;Gemba Walk&rdquo; idea from continuous improvement: go to where the work happens and observe.</li>
         <li>Built the <strong>operational toolkit</strong> — playbook, hypothesis library, pre-read templates, trackers, and a consistent insight-capture process.</li>
         <li>Ran a <strong>5-week pilot (Wave 1)</strong> across multiple security product areas and partner types, then socialized it as a repeatable continuous-improvement practice.</li>
       </ul>
 
+      <div class="frame">
       <h2>The impact</h2>
-      <ul>
+      <ul class="pointers">
         <li>Replaced ad-hoc feedback with a <strong>hypothesis-driven, repeatable method</strong> that produces structured, prioritizable engineering signals.</li>
         <li>Presented the practice to a <strong>~40-person partner-PM organization</strong> for scaled adoption.</li>
         <li>Created reusable assets that let others run the method without starting from scratch.</li>
       </ul>
+      </div>
 
       <h2>What it showed</h2>
       <p>Leadership and systems thinking: seeing a gap in how a whole org learns from partners, then designing — and getting adoption for — a durable process to close it.</p>

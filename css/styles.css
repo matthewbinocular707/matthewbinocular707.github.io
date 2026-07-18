@@ -1,0 +1,136 @@
+/* ===== Mohit Kumar — portfolio ===== */
+:root {
+  --bg: #fbfbf9;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --faint: #8f8f8f;
+  --line: #e6e4df;
+  --accent: #1a1a1a;
+  --card: #ffffff;
+  --tag-bg: #f0efeb;
+  --max: 720px;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+:root[data-theme="dark"] {
+  --bg: #121211;
+  --fg: #ececea;
+  --muted: #a3a3a0;
+  --faint: #7d7d7a;
+  --line: #2b2b29;
+  --accent: #ececea;
+  --card: #1a1a19;
+  --tag-bg: #232322;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  transition: background .3s ease, color .3s ease;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+/* ---- top nav ---- */
+.site-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 28px 0 0; gap: 16px;
+}
+.site-nav a.brand { font-family: var(--serif); font-size: 19px; font-weight: 600; letter-spacing: -.01em; }
+.nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); font-size: 15px; }
+.nav-links a:hover { color: var(--fg); }
+a { color: var(--fg); text-decoration: none; }
+a.u, .prose a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
+a.u:hover, .prose a:hover { text-decoration-color: var(--fg); }
+
+.theme-toggle {
+  background: none; border: 1px solid var(--line); color: var(--muted);
+  width: 34px; height: 34px; border-radius: 50%; cursor: pointer;
+  font-size: 15px; line-height: 1; display: inline-flex; align-items: center; justify-content: center;
+  transition: border-color .2s, color .2s;
+}
+.theme-toggle:hover { border-color: var(--fg); color: var(--fg); }
+
+/* ---- hero ---- */
+.hero { padding: 64px 0 8px; }
+.hero h1 { font-family: var(--serif); font-size: 34px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -.02em; }
+.hero .role { color: var(--muted); font-size: 17px; margin: 0 0 24px; }
+.hero .lede { font-size: 19px; line-height: 1.6; margin: 0; }
+.hero .lede strong { font-weight: 600; }
+
+/* ---- sections ---- */
+section { padding: 40px 0; border-top: 1px solid var(--line); margin-top: 40px; }
+section:first-of-type { border-top: none; margin-top: 0; }
+.eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 0 0 24px; }
+
+/* ---- project list ---- */
+.projects { list-style: none; margin: 0; padding: 0; }
+.projects li { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.projects li:last-child { border-bottom: none; }
+.proj-link { display: block; }
+.proj-meta { font-size: 13px; color: var(--faint); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
+.proj-title { font-family: var(--serif); font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; }
+.proj-title .arrow { color: var(--faint); transition: transform .2s, color .2s; display: inline-block; }
+.proj-link:hover .proj-title { text-decoration: underline; text-underline-offset: 4px; }
+.proj-link:hover .arrow { transform: translateX(4px); color: var(--fg); }
+.proj-desc { color: var(--muted); font-size: 16px; margin: 0; }
+.proj-desc strong { color: var(--fg); font-weight: 600; }
+
+/* ---- teaser lists (writings / blogroll) ---- */
+.teasers { list-style: none; margin: 0; padding: 0; }
+.teasers li { padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; }
+.teasers li:last-child { border-bottom: none; }
+.teasers .t-title { color: var(--fg); }
+.teasers .t-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+.teasers .t-meta { color: var(--faint); font-size: 14px; white-space: nowrap; }
+.section-more { margin-top: 18px; font-size: 15px; color: var(--muted); }
+.section-more a:hover { color: var(--fg); }
+
+/* ---- prose (detail pages) ---- */
+.prose h2 { font-family: var(--serif); font-size: 22px; margin: 36px 0 10px; letter-spacing: -.01em; }
+.prose h3 { font-size: 16px; letter-spacing: .04em; text-transform: uppercase; color: var(--faint); margin: 28px 0 8px; }
+.prose p { margin: 0 0 16px; }
+.prose ul { margin: 0 0 16px; padding-left: 20px; }
+.prose li { margin-bottom: 7px; }
+.back { display: inline-block; margin-bottom: 8px; color: var(--muted); font-size: 15px; }
+.back:hover { color: var(--fg); }
+.page-head { padding: 40px 0 8px; }
+.page-head .proj-meta { margin-bottom: 10px; }
+.page-head h1 { font-family: var(--serif); font-size: 30px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -.02em; }
+.page-head .summary { font-size: 19px; color: var(--muted); margin: 0; }
+
+/* ---- tags / chips ---- */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+.tags li { font-size: 13px; color: var(--muted); background: var(--tag-bg); border-radius: 100px; padding: 4px 12px; text-transform: none; letter-spacing: 0; }
+
+/* ---- outcome highlights ---- */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 8px 0 0; padding: 0; list-style: none; }
+.stats li { padding: 0; border: none; }
+.stats .n { font-family: var(--serif); font-size: 26px; font-weight: 600; display: block; letter-spacing: -.01em; }
+.stats .l { font-size: 14px; color: var(--muted); }
+
+/* ---- footer ---- */
+.site-footer { border-top: 1px solid var(--line); margin-top: 56px; padding: 40px 0 60px; }
+.site-footer .q { font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--muted); margin: 0 0 24px; }
+.site-footer .links { display: flex; gap: 20px; flex-wrap: wrap; }
+.site-footer .links a { color: var(--muted); font-size: 15px; }
+.site-footer .links a:hover { color: var(--fg); }
+.site-footer .copy { color: var(--faint); font-size: 13px; margin-top: 20px; }
+
+/* ---- responsive ---- */
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: 28px; }
+  .hero .lede { font-size: 17px; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .teasers li { flex-direction: column; gap: 2px; }
+  .teasers .t-meta { white-space: normal; }
+}

